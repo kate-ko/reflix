@@ -2,26 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
+const DEFAULTCOLOR = "blue"
+
 class Landing extends Component {
-    constructor() {
-        super()
-        this.state = {
-            users: [
-                { name: "Jasmin", color: "yellow" },
-                { name: "Jake", color: "blue" },
-                { name: "Jenny", color: "green" },
-                { name: "Justin", color: "red" }
-            ]
-        }
-    }
     render() {
+        let users = this.props.users
         return (
             <div id="users-container">
-
-                {this.state.users.map((user, i) => {
+                { users.map((user, i) => {
                     return (
                         <Link to={"/catalog"} key={i}>
-                            <div className="user" style={{ background: user.color }}>
+                            <div className="user" style={{ background: user.color || DEFAULTCOLOR }} 
+                                onClick={ () => this.props.selectUser(user.id) }>
                                 <span>{user.name}</span>
                             </div>
                         </Link>

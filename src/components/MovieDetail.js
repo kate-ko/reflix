@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
 
 class MovieDetail extends Component {
-    constructor() {
-        super()
-    }
     render() {
         const movie = this.props.movie
         return (

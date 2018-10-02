@@ -8,6 +8,10 @@ body {
   color: rgb(196, 189, 189);
 }
 
+.App {
+  padding: 30px;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -18,34 +22,52 @@ a:visited {
 
 #main-links {
   text-align: left;
-  padding: 30px;
+  /*padding: 30px;*/
   display: inline-block;
   width: 20%;
-  height: 50px;
+  height: 10px;
   vertical-align: center;
 }
 
 #logo {
   text-align: right;
   display: inline-block;
-  padding: 10px;
-  width: 70%;
-  height: 50px;
+  /*padding: 10px;*/
+  width: 80%;
+  height: 10px;
   vertical-align: center;
 }
 
 #main-links > a{
   color: white;
   text-shadow: -1px -1px 0 #1c1e1f, 1px -1px 0 #1c1e1f, -1px 1px 0 #1c1e1f, 1px 1px 0 #1c1e1f;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#budget {
-  padding-left: 30px;
+.hello {
+   /*padding: 30px;*/
+  height: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.budget {
+   /*padding: 30px;*/
+  height: 20px;
+  padding-bottom: 20px;
 }
 
 #search-bar {
-  padding-left: 30px;
+   /*padding: 30px;*/
+}
+
+input {
+  background: #111213;
+  border-width: 3px;
+  height: 30px;
+  width: 200px;
+  color: white;
+  border-style: none;
 }
 
 #users-container {
@@ -88,11 +110,22 @@ a:visited {
   width: 200px;
   height: 200px;
   display: inline-block;
-  margin: 20px;
   box-sizing:border-box;
   vertical-align: top;
   text-align: right;
   background-size: cover;
+  margin: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  vertical-align: top;
+  padding-right: 2px;
+}
+
+button : focus {
+  outline: none;
 }
 
 .plus {
@@ -118,6 +151,10 @@ a:visited {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+#movie-container img {
+  max-width: 600px;
 }
 
 .desc {
